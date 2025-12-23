@@ -8,7 +8,7 @@ spec:
     namespace: argocd
   source:
     path: apps
-    repoURL: 'https://github.com/semever24/argo-cd-app-of-apps-demo'
+    repoURL: 'https://github.com/semever24/argocd-app-of-apps'
     targetRevision: HEAD
   project: default
     syncPolicy:

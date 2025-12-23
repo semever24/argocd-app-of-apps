@@ -8,11 +8,11 @@ metadata:
 spec:
   destination:
     namespace: guestbook
-    name: child-cluster
+    name: kind-dev-cluster
   project: default
   source:
-    path: general/helm-guestbook
-    repoURL: https://github.com/morey-tech/argocd-example-apps
+    path: apps
+    repoURL: https://github.com/semever24/argocd-app-of-apps
     targetRevision: HEAD
   syncPolicy:
     automated:

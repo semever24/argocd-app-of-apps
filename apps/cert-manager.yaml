@@ -17,7 +17,7 @@ spec:
           value: 'true'
   destination:
     namespace: cert-manager
-    name: child-cluster
+    name: kind-dev-cluster
   syncPolicy:
     automated: {}
     syncOptions:
