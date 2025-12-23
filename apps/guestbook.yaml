@@ -3,17 +3,22 @@ kind: Application
 metadata:
   name: guestbook
   namespace: argocd
+  annotations:
+    argocd.argoproj.io/sync-wave: "2"
   finalizers:
-  - resources-finalizer.argocd.argoproj.io
+    - resources-finalizer.argocd.argoproj.io
 spec:
-  destination:
-    namespace: guestbook
-    name: kind-dev-cluster
   project: default
+
   source:
-    path: apps
     repoURL: https://github.com/semever24/argocd-app-of-apps
-    targetRevision: HEAD
+    targetRevision: main
+    path: apps/guestbook
+
+  destination:
+    name: kind-dev-cluster
+    namespace: guestbook
+
   syncPolicy:
     automated:
       prune: true
