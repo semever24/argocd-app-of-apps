@@ -12,7 +12,7 @@ spec:
 
   source:
     repoURL: https://github.com/semever24/argocd-app-of-apps
-    targetRevision: main
+    targetRevision: master
     path: apps/guestbook
 
   destination:
