@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/semever24/argocd-app-of-apps
-    targetRevision: main
+    targetRevision: HEAD
     path: apps
   destination:
     name: in-cluster
