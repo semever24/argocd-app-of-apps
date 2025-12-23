@@ -16,7 +16,7 @@ spec:
     path: apps/guestbook
 
   destination:
-    name: kind-dev-cluster
+    name: k8s-user@app-of-apps.ap-south-1.eksctl.io
     namespace: guestbook
 
   syncPolicy:
